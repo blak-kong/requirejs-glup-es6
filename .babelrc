@@ -1,0 +1,17 @@
+{
+    "presets": [
+        ["@babel/preset-env",
+            {
+                "targets": { //指定要转译到哪个环境
+                    //浏览器环境
+                    "browsers": ["last 2 versions", "safari >= 7", "IE >= 9"],
+                    //node环境
+                    "node": "8.10" //"current"  使用当前版本的node
+                },
+                "useBuiltIns": "usage",
+                "corejs": "3" // 声明corejs版本
+                // "modules": false // 设定模块化格式 默认commonjs
+            }
+        ]
+    ]
+}
